@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+box-sizing: border-box;
+}
+body {
+font-family: 'Quicksand', sans-serif;
+margin: 0;
+padding: 0;
+}
+header {
+display: inline;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+nav.scrolled {
+  background-color: #08090A;
+}
+
+
+nav ul {
+
+padding-inline: 4rem;
+display: flex;
+gap: 2rem;
+}
+nav li {
+list-style-type: none;
+}
+nav a {
+font-size: 16px;
+font-weight: 400;
+text-decoration: none;
+color: white;
+}
+.landing {
+  display: flex;
+  flex-wrap:wrap-reverse;
+  justify-content: space-around;
+  padding: 60px;
+  top: 0;
+  background-image: radial-gradient(
+      189.96% 61.18% at 50% 38.82%,
+      rgba(72, 87, 255, 0) 0%,
+      rgba(21, 24, 38, 0.803) 73.22%,
+      #08090a 99.74%
+    ),
+    url("../image/keyboard.jpg");
+  text-align: left;
+  width: 100vw;
+  height: 100vh;
+  font-size: 20px;
+  color: white;
+  }
+.landing div {
+  justify-self: center;
+  align-self: center;
+}
+.landing p {
+  max-width:500px
+}
+.linkedin-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0077B5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.linkedin-btn:hover {
+  background-color: #046293;
+}
+
+.linkedin-btn .icon {
+  display: inline-block;
+  background-image: url('../image/linkedin.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.linkedin-btn .text {
+  display: inline-block;
+}
+
+.myProfilePhoto{
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+  width: 220px;
+}
+main {
+  background-color: #08090A;
+  width: 100vw;
+  color: white;
+padding: 20px;
+display: flex;
+gap: 1.5rem;
+} 
+aside {
+flex: 1;
+}
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #08090A;;
+    width: 100vw; 
+    text-align: center;
+    font-weight: bold;
+}
+    
+#content {
+flex: 5;
+display: flex;
+flex-flow: column nowrap;
+gap: 1rem 2rem;
+}   
+nav a {
+font-size: 18px;
+font-weight: 400;
+text-decoration: none;
+}
+nav a:hover {
+font-weight: bold;
+}
+
+h2, h3 {
+color: #00a2c6;
+}
+
+
+
+.profile header {
+text-align: center;
+}
+
+.featured-image {
+width: 100%;
+max-height: 300px;
+object-fit: cover;
+object-position: center;
+}
+
+.profile img {
+width: 200px;
+}
+.card {
+box-shadow: 0 4px 8px 0 rgba(35, 33, 45, 0.2);
+border-radius: 5px;
+padding: 20px;
+margin-top: 20px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+   
+    main aside {
+      align-self: center;
+    }
+  }
+   
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+  }
